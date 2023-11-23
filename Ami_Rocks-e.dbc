@@ -35,18 +35,18 @@ BS_:
 BU_: BMS ECU OBC 
 BO_ 2147485056 BMS_45V_Batt_V;A;SoC: 8 BMS
    SG_ BMS_45V_Batt_Current : 0|16@1+ (0.1,-6553.5) [0|250] "Ampere" Vector__XXX
-   SG_ BMS_45V_Batt_Voltage : 16|16@1+ (0.01,0) [30|60] "Volt" Vector__XXX
-   SG_ BMS_45V_Batt_SoC : 40|8@1+ (1,0) [0|100] "" Vector__XXX
+   SG_ BMS_45V_Batt_Voltage : 16|16@1+ (0.01,0) [0|1] "Volt" Vector__XXX
+   SG_ BMS_45V_Batt_SoC : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147485057 ECU_Odo;Speed: 8 ECU
    SG_ ECU_Odometer : 32|24@1+ (0.1,0) [0|1] "km" Vector__XXX
-   SG_ ECU_Speed : 56|8@1+ (1,0) [0|100] "km/h" Vector__XXX
+   SG_ ECU_Speed : 56|8@1+ (1,0) [0|1] "km/h" Vector__XXX
 
 BO_ 2147485058 OBC_Remain;SoC: 8 OBC
    SG_ OBC_Remain_Chargetime : 0|16@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147485075 BMS_12V_Batt_Voltage: 8 BMS
-   SG_ BMS_12V_Batt_Voltage : 0|16@1+ (1,0) [0|16] "Volt" Vector__XXX
+   SG_ BMS_12V_Batt_Voltage : 0|16@1+ (1,0) [0|1] "Volt" Vector__XXX
 
 BO_ 2147485076 BMS_45V_Temp: 8 BMS
    SG_ BMS_45V_Batt_Temperatur_1 : 0|16@1+ (1,0) [0|1] "°C" Vector__XXX
@@ -60,4 +60,3 @@ BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 1;
-VAL_ 2147485058 OBC_Remain_Chargetime 0 ">8h_or_no_charge";
